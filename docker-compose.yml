@@ -234,6 +234,11 @@ services:
         - ${MYSQL_ENTRYPOINT_INITDB}:/docker-entrypoint-initdb.d
       ports:
         - "${MYSQL_PORT}:3306"
+      volumes_from:
+        - applications
+        - nginx
+        - php-fpm
+        - php-fpm2
       networks:
         - backend
 
