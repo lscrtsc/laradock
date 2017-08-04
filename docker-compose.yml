@@ -151,6 +151,7 @@ services:
       depends_on:
         - php-fpm
         - php-fpm2
+        - mysql
       networks:
         - frontend
         - backend
