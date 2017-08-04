@@ -7,5 +7,5 @@ fe00::0 ip6-localnet
 ff00::0 ip6-mcastprefix
 ff02::1 ip6-allnodes
 ff02::2 ip6-allrouters
-172.21.0.3      www.api.local
-172.21.0.3      back.pagofacil.local.net
+10.0.75.1      www.api.local
+10.0.75.1      back.pagofacil.local.net
