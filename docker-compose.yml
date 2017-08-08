@@ -97,14 +97,15 @@ services:
 ### PHP-FPM version 2 Container #######################################
 
     php-fpm2:
-      image: tommylau/php-5.2:latest
-       
+      
+      build:
+        context: ./php-fpm2  
       ports:
           - "9001:9000"
       volumes_from:
         - applications
       volumes:
-        - ./php-fpm/php52.ini:/usr/local/etc/php/php.ini
+        - ./php-fpm2/php52.ini:/usr/local/etc/php/php.ini
         - ./nginx/hosts:/etc/hosts
       expose:
         - "9001"
